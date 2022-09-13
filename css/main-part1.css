@@ -1,0 +1,96 @@
+/* ----- MAIN ------- */
+
+.page1 .informations {
+  background-color: var(--paragraph);
+  height: 10rem;
+}
+
+.page1 .informations ul {
+  justify-content: space-around;
+}
+
+.page1 .informations ul li {
+  margin-top: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* --- vantagens --- */
+.page1 .main-advantages .titulo2 {
+  background: linear-gradient(180deg, #5017a0 0%, #7116f2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page1 .main-advantages .titulo3 {
+  color: var(--paragraph);
+}
+
+.page1 .main-advantages {
+  text-align: center;
+}
+
+.cards {
+  margin-block: 2.5rem;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card {
+  padding: 1rem 2rem;
+  height: 38rem;
+  width: 35rem;
+
+  flex-wrap: wrap;
+  padding: 0;
+
+  flex-wrap: wrap;
+}
+
+.card h4,
+p {
+  text-align: center;
+}
+
+.center {
+  transform: translateY(14rem);
+  margin: 0 4rem 2rem 4rem;
+  line-height: 1.8rem;
+}
+
+.border-card {
+  border-radius: 69px;
+  height: 100%;
+}
+
+.card1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url(/images/code.webp);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.card2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url(/images/graphic.webp);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.card3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url(/images/model.webp);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.main-advantages button {
+  background-color: var(--color1);
+  padding: 1rem 10rem;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,48 @@
+.background-main {
+  background-image: url(/images/simple-background.svg);
+
+  background-size: cover;
+  background-position-y: -30rem;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.page2 .titulo3 {
+  margin-bottom: 3rem;
+}
+
+#feedback-box {
+  background-color: var(--paragraph);
+
+  width: 80rem;
+  height: 20rem;
+  border-radius: 73px;
+
+  margin-inline: auto;
+  position: relative;
+}
+#feedback-box .feedback-text {
+  width: 40%;
+  position: absolute;
+  text-align: center;
+  margin-left: 2rem;
+  transform: translateY(5rem);
+}
+
+.feedback-text p {
+  line-height: 22px;
+}
+
+.p-title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#feedback-box #box {
+    background-color: var(--primary-color);
+    height: 20rem;
+    width: 10rem;
+    position: relative;
+    margin-left: 55rem;
+}
