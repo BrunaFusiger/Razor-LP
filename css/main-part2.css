@@ -14,19 +14,20 @@
 #feedback-box {
   background-color: var(--paragraph);
 
-  width: 80rem;
+  width: 70rem;
   height: 20rem;
   border-radius: 73px;
 
   margin-inline: auto;
   position: relative;
 }
+
 #feedback-box .feedback-text {
   width: 40%;
   position: absolute;
   text-align: center;
-  margin-left: 2rem;
-  transform: translateY(5rem);
+  margin-left: 10%;
+  transform: translateY(4rem);
 }
 
 .feedback-text p {
@@ -39,10 +40,98 @@
   font-weight: 700;
 }
 
-#feedback-box #box {
-    background-color: var(--primary-color);
-    height: 20rem;
-    width: 10rem;
-    position: relative;
-    margin-left: 55rem;
+.p-information {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+#feedback-box img {
+  width: 25%;
+  height: 75%;
+  border-radius: 50%;
+  position: relative;
+  transform: translate(80%, 15%);
+}
+
+.companies {
+  margin-top: 2rem;
+  display: flex;
+  height: 45%;
+  justify-content: space-around;
+}
+
+.companies .titulo2 {
+  font-size: 3.5rem;
+}
+
+.companies .titulo3 {
+  text-align: start;
+}
+
+.companies img {
+  width: 30%;
+  border: 2px solid var(--paragraph);
+  box-shadow: 3px 3px 6px #000;
+  border-radius: 10%;
+
+  background-color: #fff;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+/* ----- modal ------- */
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  
+  display: none;
+  opacity: 0;
+
+  transition: opacity 500ms;
+
+}
+
+.modal::after {
+  content: "Conheça algumas das empresas clientes da razor";
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  width: 40%;
+  margin: -10rem auto;
+  padding: 3rem 2rem;
+
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+}
+
+.modal.show {
+  opacity: 100;
+}
+
+.close {
+  position: absolute;
+
+  left: 70vw;
+  top: 10vh;
+
+  width: 8%;
+
+  transition: .5s;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.modalImg img {
+  margin-block: 20vh;
 }

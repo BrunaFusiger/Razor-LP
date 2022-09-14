@@ -156,3 +156,10 @@ p {
   color: var(--paragraph);
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.overflow {
+  overflow: hidden;
+}
