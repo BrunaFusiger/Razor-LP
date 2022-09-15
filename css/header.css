@@ -83,7 +83,7 @@ header.background-img {
     font-size: 5rem;
   }
   
-  .nav-content .nav-content-title button {
+  .nav-content .nav-content-title button#nav-content-button {
     padding: 2rem 4rem;
     font-size: 2rem;
     margin-top: 1rem;

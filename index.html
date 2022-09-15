@@ -23,7 +23,7 @@
                         <li><a href="#">Vantagens</a></li>
                         <li><a href="#">Suporte</a></li>
                         <li><a href="#">Criadores</a></li>
-                        <button class="btn-16"><a href="#">Compre Agora</a></button>
+                        <button class="btn-16 hover"><a href="#">Compre Agora</a></button>
                     </ul>
                 </nav>
             </section>
@@ -38,7 +38,7 @@
                     <h1>de alta permormace</h1>
 
                     <div class="animtionY">
-                        <button><a href="#">conheça</a></button>
+                        <button id="nav-content-button" class="hover"><a href="#">conheça</a></button>
                     </div>
                 </div>
             </section>
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </section>
-                <button><a href="#">ver mais</a></button>
+                <button id="main-advantages-button"  class="hover"><a href="#">ver mais</a></button>
             </div>
         </div>
         <div class="page2 page background-main">
@@ -212,7 +212,9 @@
             </section>
         </div>
 
-        <div class="page4 page" id="particles-container">
+        <div class="page4 page">
+            <div id="particles-container"></div>
+
             <div data-aos="fade-up" data-aos-duration="1000">
                 <h2 class="titulo2">Criadores</h2>
                 <h3 class="titulo3">do website</h3>
@@ -220,9 +222,34 @@
 
 
             <div id="carousel-container">
-                <figure id="carousel">
+                <div class="carousel-container-buttons">
+                    <button id="back" class="pointer"> &lt; </button>
+                    <button id="go" class="pointer"> &gt; </button>
+                </div>
+                <div class="img">
+                    <img src="/images/bruna.webp" alt="Bruna Fusiger, desenvolvedora front-end e UX/UI designer">
+                </div>
+                <div class="img">
+                    <img src="/images/foto-Matheus.webp"
+                        alt="Matheus Silva Rodrigues, pesquisador, audiovisual, designer">
+                </div>
+                <div class="img">
+                    <img src="/images/julia.webp" alt="Julia, suporte">
+                </div>
+            </div>
 
-                </figure>
+            <div class="page page5 general-alignment">
+                <h2 class="titulo2">produtos</h2>
+                <h3 class="titulo3">conheça os nossos principais produtos</h3>
+
+                <section class="cards flex" data-aos="zoom-in-up" data-aos-duration="2500"
+                    data-aos-anchor="#example-anchor" data-aos-offset="400">
+                    <div class="products-card">
+                
+                    </div>
+                    </div>
+                </section>
+                <button><a href="#">adquirir</a></button>
             </div>
     </main>
 
@@ -234,6 +261,7 @@
     <script src="/script/particles.js"></script>
     <script src="/script/AOS.js"></script>
     <script src="/script/typeWrite.js"></script>
+    <script src="/script/Carousel.js"></script>
 </body>
 
 </html>

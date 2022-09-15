@@ -39,14 +39,11 @@
 }
 
 .card {
-  padding: 1rem 2rem;
   height: 38rem;
   width: 35rem;
 
   flex-wrap: wrap;
   padding: 0;
-
-  flex-wrap: wrap;
 }
 
 .card h4,
@@ -89,7 +86,7 @@ p {
   background-position-x: center;
 }
 
-.main-advantages button {
+.main-advantages button#main-advantages-button {
   background-color: var(--color1);
   padding: 1rem 10rem;
   font-size: 1.6rem;
