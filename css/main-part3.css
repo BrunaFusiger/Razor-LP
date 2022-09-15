@@ -1,0 +1,105 @@
+/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+.page3 {
+  background: linear-gradient(45deg, #5016a0, #28035c, #7c38db, #28035c);
+  animation: gradient 15s linear infinite;
+  text-align: center;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* --- general config page3 --- */
+.page3 .titulo2,
+.video,
+.question-model {
+  margin-inline: auto;
+}
+
+/* --- video part --- */
+.page3 .titulo2 {
+  width: 60%;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.page3 .video {
+  background-color: #d9d9d9;
+  width: 40%;
+  height: 30vh;
+}
+
+.page3 .video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* perguntas frequentes */
+
+#commom-questions {
+  height: 41%;
+}
+
+.question-model summary {
+  background-color: var(--paragraph);
+  color: var(--primary-color);
+
+  width: 40%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  text-align: start;
+}
+
+.question-model p {
+  margin-bottom: 2rem;
+  background-color: var(--primary-color);
+  color: var(--paragraph);
+  width: 40%;
+  padding: 1rem;
+  font-weight: 300;
+}
+
+.question-model summary,
+p {
+  margin-inline: auto;
+  list-style: none;
+}
+
+summary::after {
+  content: "+";
+  color: #fff;
+  float: right;
+  font-weight: bold;
+  width: 20px;
+  font-size: 2rem;
+}
+details[open] summary::after {
+  content: "-";
+}

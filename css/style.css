@@ -2,6 +2,8 @@
 @import url("/css/header.css");
 @import url("/css/main-part1.css");
 @import url("/css/main-part2.css");
+@import url("/css/main-part3.css");
+@import url("/css/carousel.css");
 
 * {
   box-sizing: border-box;

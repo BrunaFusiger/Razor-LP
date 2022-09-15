@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Razor Computadores</title>
 </head>
 
@@ -25,10 +29,12 @@
             </section>
 
             <section class="nav-content general-aligment-section">
-                <img src="/images/grupo-computadores.png" alt="três computadores da Razor. Um prata e dois pretos">
+                <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
+                    <img src="/images/grupo-computadores.png" alt="três computadores da Razor. Um prata e dois pretos">
+                </div>
 
-                <div class="nav-content-title">
-                    <h2>Computadores profissionais</h2>
+                <div class="nav-content-title" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+                    <h2 class="headline">Computadores profissionais</h2>
                     <h1>de alta permormace</h1>
 
                     <div class="animtionY">
@@ -107,7 +113,8 @@
                 <h2 class="titulo2">Vantagens</h2>
                 <h3 class="titulo3">de adquirir nossos produtos</h3>
 
-                <section class="cards flex">
+                <section class="cards flex" data-aos="zoom-in-up" data-aos-duration="2500"
+                    data-aos-anchor="#example-anchor" data-aos-offset="400">
                     <div class="card">
                         <div class="card1 border-card">
                             <h4 class="center">Processamento</h4>
@@ -134,7 +141,8 @@
             </div>
         </div>
         <div class="page2 page background-main">
-            <section class="feedback general-alignment">
+            <section class="feedback general-alignment" data-aos="fade-right" data-aos-offset="400"
+                data-aos-easing="ease-in-sine">
                 <h2 class="titulo2">feedback</h2>
                 <h3 class="titulo3">DO NOSSO ÚLTIMO CLIENTE</h3>
 
@@ -152,8 +160,10 @@
 
             <section class="companies general-alignment">
                 <div>
-                    <h2 class="titulo2 black">AUMENTE A PRODUTIVIDADE</h2>
-                    <h3 class="titulo3 black">DA SUA EMPRESA COMO ELES:</h3>
+                    <h2 class="titulo2 black" data-aos="fade-right" data-aos-duration="1000">AUMENTE A PRODUTIVIDADE
+                    </h2>
+                    <h3 class="titulo3 black" data-aos="fade-right" data-aos-duration="1500">DA SUA EMPRESA COMO ELES:
+                    </h3>
                 </div>
                 <img class="pointer animtionY imageBeforeModal" src="/images/empresas.jpg"
                     alt="usp, itaipu, petrobras, globo, sbt, itaú, fiocruz, sap, chilli beans, instituto butantan, senai, cruz vermelha, cnpem, eldorado">
@@ -166,12 +176,64 @@
             </section>
         </div>
         </div>
+
+        <div class="page3 page">
+            <section class="general-alignment" id="page3-video">
+                <h2 class="titulo2" data-aos="fade-up" data-aos-duration="1000">CONHEÇA O LUGAR ONDE A MAGIA ACONTECE
+                </h2>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/fR5YpOrcNXc" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section id="commom-questions">
+                <h2 class="titulo2" data-aos="fade-up" data-aos-duration="1000">PERGUNTAS FREQUENTES</h2>
+                <details class="question-model">
+                    <summary class="pointer">First question?</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est possimus sit numquam! In amet
+                        quisquam, quo commodi asperiores nemo aperiam iure dolore eaque blanditiis quis? A quisquam
+                        saepe omnis!</p>
+                </details>
+                <details class="question-model">
+                    <summary class="pointer">second question?</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est possimus sit numquam! In amet
+                        quisquam, quo commodi asperiores nemo aperiam iure dolore eaque blanditiis quis? A quisquam
+                        saepe omnis!</p>
+                </details>
+                <details class="question-model">
+                    <summary class="pointer">third question?</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est possimus sit numquam! In amet
+                        quisquam, quo commodi asperiores nemo aperiam iure dolore eaque blanditiis quis? A quisquam
+                        saepe omnis!</p>
+                </details>
+            </section>
+        </div>
+
+        <div class="page4 page" id="particles-container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="titulo2">Criadores</h2>
+                <h3 class="titulo3">do website</h3>
+            </div>
+
+
+            <div id="carousel-container">
+                <figure id="carousel">
+
+                </figure>
+            </div>
     </main>
 
 
     <footer></footer>
 
-<script src="/script/modal.js"></script>
+    <script src="/script/modal.js"></script>
+    <script src="/script/FAQ.js"></script>
+    <script src="/script/particles.js"></script>
+    <script src="/script/AOS.js"></script>
+    <script src="/script/typeWrite.js"></script>
 </body>
 
 </html>
