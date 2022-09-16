@@ -1,0 +1,36 @@
+footer #footer {
+    background-color: var(--color1);
+    text-align: center;
+}
+
+footer #footer a img {
+    width: 20%;
+}
+
+footer #footer p {
+    color: var(--primary-color);
+    line-height: 2rem;
+}
+
+footer #footer .footer-info {
+    margin-block: 4rem;
+}
+
+footer #footer .footer-social-links{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+footer #footer .footer-social-links a img {
+    width: 100%;
+    margin-bottom: 4rem;
+    transition: .5s;
+}
+
+footer #footer .footer-social-links a img:hover {
+    transform: scale(1.3);
+}
+
+
+

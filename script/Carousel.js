@@ -3,35 +3,35 @@ const go = document.querySelector("#carousel-container #go");
 const images = document.querySelectorAll("#carousel-container .img");
 
 //saber o index do atual slide
-let indxCurrentSlide = 0;
+let indexCurrentSlide = 2;
 
 //numero máximo de slides
 let maxSlide = images.length - 1;
 
-//aumentar index quando clica em go e se indx = max slide, volta pra 0
+//aumentar index quando clica em go e se index = max slide, volta pra 0
 go.addEventListener("click", () => {
-  if (indxCurrentSlide === maxSlide) {
-    indxCurrentSlide = 0;
+  if (indexCurrentSlide === maxSlide) {
+    indexCurrentSlide = 0;
   } else {
-    indxCurrentSlide++;
+    indexCurrentSlide++;
   }
 
-  // indx 1 = 100% (padrão)
+  // index 1 = 100% (padrão)
   // 100 x index da imagem - index atual
-  images.forEach((img, indx) => {
-    img.style.transform = `translateX(${100 * (indx - indxCurrentSlide)}%)`;
+  images.forEach((img, index) => {
+    img.style.transform = `translateX(${100 * (index - indexCurrentSlide)}%)`;
   });
 });
 
 back.addEventListener("click", () => {
-    if (indxCurrentSlide === 0) {
-      indxCurrentSlide = maxSlide;
+    if (indexCurrentSlide === 0) {
+      indexCurrentSlide = maxSlide;
     } else {
-      indxCurrentSlide--;
+      indexCurrentSlide--;
     }
   
-    images.forEach((img, indx) => {
-      img.style.transform = `translateX(${100 * (indx - indxCurrentSlide)}%)`;
+    images.forEach((img, index) => {
+      img.style.transform = `translateX(${100 * (index - indexCurrentSlide)}%)`;
     });
   });
 

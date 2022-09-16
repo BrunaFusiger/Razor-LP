@@ -30,19 +30,6 @@
   overflow: hidden;
 }
 
-.img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-
-.img img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
 .carousel-container-buttons {
   position: absolute;
   width: 100%;
@@ -74,5 +61,47 @@
   z-index: 100;
 }
 
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 
-/* //fazer hover com escrita em cada foto (falar com angelo) */
+.img .img-hover-info{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 50% !important;
+  padding: 0 40px;
+  background: linear-gradient(-180deg, #5016a090, #5016a090, #000);
+  opacity: 0;
+  transition: opacity .5s;
+
+  color: #fff;
+}
+
+.img .img-hover-info h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.img .img-hover-info p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.img .img-hover-info a p {
+  font-style: italic;
+}
+
+.img:hover .img-hover-info{
+  opacity: 1;
+}
+
+.img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

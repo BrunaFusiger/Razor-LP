@@ -14,16 +14,16 @@
 </head>
 
 <body>
-    <header class="background-img page">
+    <header class="background-img page" id="header">
         <div class="general-alignment">
             <section class="general-nav general-aligment-section">
                 <img src="./images/razor-white.png" alt="Logo Razor Computadores Branco">
                 <nav class="nav-bar">
                     <ul>
-                        <li><a href="#">Vantagens</a></li>
-                        <li><a href="#">Suporte</a></li>
-                        <li><a href="#">Criadores</a></li>
-                        <button class="btn-16 hover"><a href="#">Compre Agora</a></button>
+                        <li><a href="#advantages">Vantagens</a></li>
+                        <li><a href="#clients">Clientes</a></li>
+                        <li><a href="#creators">Criadores</a></li>
+                        <button class="btn-16 hover"><a href="#products">Compre Agora</a></button>
                     </ul>
                 </nav>
             </section>
@@ -38,14 +38,14 @@
                     <h1>de alta permormace</h1>
 
                     <div class="animtionY">
-                        <button id="nav-content-button" class="hover"><a href="#">conheça</a></button>
+                        <button id="nav-content-button" class="hover"><a href="#products">conheça</a></button>
                     </div>
                 </div>
             </section>
         </div>
     </header>
     <main>
-        <div class="page1 page">
+        <div class="page1 page" id="advantages">
             <section class="informations">
                 <ul class="flex">
                     <li>
@@ -110,7 +110,7 @@
             </section>
 
             <div class="main-advantages general-alignment">
-                <h2 class="titulo2">Vantagens</h2>
+                <h2 class="titulo2 purple">Vantagens</h2>
                 <h3 class="titulo3">de adquirir nossos produtos</h3>
 
                 <section class="cards flex" data-aos="zoom-in-up" data-aos-duration="2500"
@@ -137,10 +137,10 @@
                         </div>
                     </div>
                 </section>
-                <button id="main-advantages-button"  class="hover"><a href="#">ver mais</a></button>
+                <button id="main-advantages-button" class="hover"><a href="#products">ver mais</a></button>
             </div>
         </div>
-        <div class="page2 page background-main">
+        <div class="page2 page background-main" id="clients">
             <section class="feedback general-alignment" data-aos="fade-right" data-aos-offset="400"
                 data-aos-easing="ease-in-sine">
                 <h2 class="titulo2">feedback</h2>
@@ -212,7 +212,7 @@
             </section>
         </div>
 
-        <div class="page4 page">
+        <div class="page4 page" id="creators">
             <div id="particles-container"></div>
 
             <div data-aos="fade-up" data-aos-duration="1000">
@@ -227,34 +227,111 @@
                     <button id="go" class="pointer"> &gt; </button>
                 </div>
                 <div class="img">
-                    <img src="/images/bruna.webp" alt="Bruna Fusiger, desenvolvedora front-end e UX/UI designer">
-                </div>
-                <div class="img">
                     <img src="/images/foto-Matheus.webp"
                         alt="Matheus Silva Rodrigues, pesquisador, audiovisual, designer">
+                    <span class="img-hover-info default">
+                        <h4>Matheus Silva Rodrigues</h4>
+                        <p>Pesquisador responsável pelo audiovisual, organização e design</p>
+                        <a href="https://www.linkedin.com/in/matheus-silva-rodrigues-670aa3191/" target="_blank">
+                            <p class="pointer"> Entre em contato</p>
+                        </a>
+                    </span>
                 </div>
                 <div class="img">
-                    <img src="/images/julia.webp" alt="Julia, suporte">
+                    <img src="/images/julia.webp"
+                        alt="Júlia Soares Ribeiro, suporte tecnico responsável pela avaliação dos projetos">
+                    <span class="img-hover-info default">
+                        <h4>Júlia Soares Ribeiro</h4>
+                        <p>responsável pelo suporte e avaliação dos projetos</p>
+                    </span>
+                </div>
+                <div class="img">
+                    <img src="/images/bruna.webp" alt="Bruna Fusiger, desenvolvedora front-end e UX/UI designer">
+                    <span class="img-hover-info default">
+                        <h4> Bruna Fusiger</h4>
+                        <p>desenvolvedora front-end e UX/UI designer</p>
+                        <a href="https://www.linkedin.com/in/brunafusiger/" target="_blank">
+                            <p class="pointer">Entre em contato</p>
+                        </a>
+                    </span>
                 </div>
             </div>
+        </div>
 
-            <div class="page page5 general-alignment">
-                <h2 class="titulo2">produtos</h2>
-                <h3 class="titulo3">conheça os nossos principais produtos</h3>
-
-                <section class="cards flex" data-aos="zoom-in-up" data-aos-duration="2500"
-                    data-aos-anchor="#example-anchor" data-aos-offset="400">
-                    <div class="products-card">
-                
-                    </div>
-                    </div>
-                </section>
-                <button><a href="#">adquirir</a></button>
+        <div class="page page5" id="products">
+            <div data-aos="fade-right" data-aos-duration="1000" class="products-aligment">
+                <h2 class="titulo2 purple">produtos</h2>
+                <h3 class="titulo3 black">conheça os nossos principais produtos</h3>
             </div>
+
+            <section class="cards flex general-alignment" data-aos="zoom-in-up" data-aos-duration="2500"
+                data-aos-anchor="#example-anchor" data-aos-offset="400">
+                <div class="products-card">
+                    <img src="/images/comp3.png" alt="computador VIRTUOS RX 2880G58">
+                    <h4>VIRTUOS RX 2880G58</h4>
+                    <ul class="default">
+                        <li>Threadripper PRO 5995WX AMD® Ryzen™ RTX A5000</li>
+                        <li> RTX A5000 Nvidia® Quadro™</li>
+                        <li> 256GB DE MEMÓRIA RAM</li>
+                        <li>2TB Workstation Class
+                            SSD M.2 PCIe X4 NVMe </li>
+                        <li>HDD 10 TB 7200RPM
+                            256MB SATA III </li>
+                    </ul>
+                </div>
+                <div class="products-card">
+                    <img src="/images/comp1.png" alt="computador VIRTUOS RX 2880G58">
+                    <h4>TALENT</h4>
+                    <ul class="default">
+                        <li>i5-12400
+                            Intel® Core™</li>
+                        <li>GTX 1650
+                            Nvidia® Geforce™</li>
+                        <li>16GB DE MEMÓRIA RAM DDR4 </li>
+                        <li> 256GB Workstation Class
+                            SSD M.2 PCIe X4 NVMe</li>
+                        <li> HDD Opciona</li>
+                    </ul>
+                </div>
+                <div class="products-card">
+                    <img src="/images/comp2.png" alt="computador VIRTUOS RX 2880G58">
+                    <h4>PRODIGY XP 960G58</h4>
+                    <ul class="default">
+                        <li>i7-12700KF
+                            Intel® Core™</li>
+                        <li>RTX 3080
+                            Nvidia® Geforce™</li>
+                        <li> 32GB DE MEMÓRIA RAM
+                            DDR4 </li>
+                        <li>512GB Workstation Class
+                            SSD M.2 PCIe X4 NVMe</li>
+                        <li>HDD 1TB 7200RPM
+                            64MB SATA III</li>
+                    </ul>
+                </div>
+                <button id="main-products-button" class="hover"><a href="#">adquirir</a></button>
+            </section>
+        </div>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <section id="footer">
+            <a href="#header"><img src="/images/razor-white.png" alt="Logomarca razor computadores"></a>  
+            <p>&copy; Razor do Brasil LTDA 2022</p>
+            <div class="footer-info">
+                <p>ATENDIMENTO</p>
+                <p>Segunda a sexta-feira</p>
+                <p>9h às 12h e 14h às 18h</p>
+            </div>
+
+            <div class="footer-social-links">
+                <a href="https://www.instagram.com/razor_computadores/?hl=pt" target="_blank"><img src="/images/instagram.png" alt="Instagram Razor computadores"></a>
+                <a href="https://www.google.com/search?q=razor+computadores&oq=razor+computadores&aqs=chrome..69i57j69i61j69i60.5674j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img src="/images/google.png" alt="Google Razor computadores"></a>
+                <a href="https://workstation.razor.com.br/?utm_term=workstation&utm_campaign=%5BSEARCH%5D+Workstation+PRO&utm_source=adwords&utm_medium=ppc&hsa_acc=1759132440&hsa_cam=2057540058&hsa_grp=81692506208&hsa_ad=361245597546&hsa_src=g&hsa_tgt=kwd-10641491&hsa_kw=workstation&hsa_mt=b&hsa_net=adwords&hsa_ver=3" target="_blank"><img src="/images/internet.png" alt="site Razor computadores"></a>
+            </div>
+        </section>
+    </footer>
 
     <script src="/script/modal.js"></script>
     <script src="/script/FAQ.js"></script>

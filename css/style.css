@@ -4,6 +4,8 @@
 @import url("/css/main-part2.css");
 @import url("/css/main-part3.css");
 @import url("/css/carousel.css");
+@import url("/css/main-part5.css");
+@import url("/css/footer.css");
 
 * {
   box-sizing: border-box;
@@ -162,6 +164,18 @@ p {
   cursor: pointer;
 }
 
+.default {
+  cursor: default;
+}
+
 .overflow {
   overflow: hidden;
+}
+
+
+.purple {
+  background: linear-gradient(180deg, #5017a0 0%, #7116f2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

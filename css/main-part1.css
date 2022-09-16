@@ -17,13 +17,6 @@
 }
 
 /* --- vantagens --- */
-.page1 .main-advantages .titulo2 {
-  background: linear-gradient(180deg, #5017a0 0%, #7116f2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .page1 .main-advantages .titulo3 {
   color: var(--paragraph);
 }
