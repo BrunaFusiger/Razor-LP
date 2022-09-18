@@ -1,8 +1,4 @@
-<h4 align="center"> 
-	🚧 🚀 Em construção...  🚧
-</h4>
 
-<!--
 <h1 align="center"> RAZOR Landing Page</h1>
 
 
