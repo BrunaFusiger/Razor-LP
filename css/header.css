@@ -22,10 +22,7 @@ header.background-img {
   .nav-bar ul {
     display: flex;
     align-items: center;
-  }
-  
-  .nav-bar ul li {
-    margin-right: 5rem;
+    gap: 5rem;
   }
   
   /* ---- HOVER ---- */
@@ -61,8 +58,8 @@ header.background-img {
   
   .nav-content {
     align-items: flex-start;
-    height: 40%;
     width: 90%;
+    height: 50%;
   
     margin-top: 28rem;
   }
@@ -89,3 +86,117 @@ header.background-img {
     margin-top: 1rem;
   }
   
+
+@media(max-width: 1190px){
+  /* ---cabeçalho--- */
+  .general-nav {
+    height: 20%;
+    width: 90%;
+  }
+
+  .nav-content {
+    margin-top: 33rem;
+  }
+   
+  .nav-content .nav-content-title h1 {
+    margin-block: 3rem;
+    font-size: 4rem;
+  }
+  
+  .nav-content .nav-content-title button#nav-content-button {
+    padding: 2rem 5rem;
+    font-size: 1.8rem;
+  }
+  
+}
+
+@media (max-width: 1090px) {
+  .nav-bar ul {
+    gap: 3rem;
+    max-width: 90%;
+  }
+ 
+  .nav-content {
+    width: 90%;
+    height: 50%;
+  
+    margin-top: 28rem;
+  }
+  
+  .nav-content img {
+    transform: translate(-8rem, -4rem);
+  }
+  
+  .nav-content .nav-content-title h1 {
+    margin-block: 3rem;
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  #header {
+    height: 100vh;
+    width: 100vw;
+  }
+  .header{
+    display: block;
+    background-color: red;
+  }
+
+  .general-nav {
+    align-items: center;
+  
+    height: 20%;
+    width: 90%;
+  }
+  
+  .general-nav img {
+    height: 150%;
+    margin: -5rem auto;
+  }
+  
+  .nav-bar ul {
+    display: none;
+  }
+  
+  .nav-content {
+    align-items: center;
+    text-align: center;
+
+    margin-top: 25rem;
+    display: block;
+  }
+  
+  .nav-content img {
+    transform: translate(-3rem, -12rem);
+    max-width: 55%;
+  }
+  
+  .nav-content-title {
+    width: 95%;
+    text-align: center;
+    margin-top: -12rem;
+    color: var(--paragraph);
+  }
+  
+  .nav-content .nav-content-title h1 {
+    margin-block: 3rem;
+    font-size: 3.5rem;
+    
+    text-align: center;
+    color: var(--paragraph);
+  }
+
+  .nav-content .nav-content-title h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--paragraph);
+  }
+  
+  .nav-content .nav-content-title button#nav-content-button {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+  }
+  
+}

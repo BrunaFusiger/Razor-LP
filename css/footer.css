@@ -1,6 +1,7 @@
 footer #footer {
     background-color: var(--color1);
     text-align: center;
+    margin-top: 10rem;
 }
 
 footer #footer a img {

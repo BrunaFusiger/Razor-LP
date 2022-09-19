@@ -1,4 +1,4 @@
-/* ----- MAIN ------- */
+
 
 .page1 .informations {
   background-color: var(--paragraph);
@@ -83,4 +83,43 @@ p {
   background-color: var(--color1);
   padding: 1rem 10rem;
   font-size: 1.6rem;
+}
+
+
+@media (max-width: 1090px) {
+  .page1 .informations ul {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  
+.page1 .informations {
+  background-color: var(--paragraph);
+  height: 10rem;
+  margin-right: 2rem;
+}
+
+.page1 .informations ul{
+  display: flex;
+}
+
+.page1 .informations ul li {
+  gap: 1rem;
+}
+
+.card {
+  height: 38rem;
+  width: 35rem;
+  padding: 0;
+  margin-bottom: 3rem;
+  margin-inline: auto;
+}
+
+.main-advantages button#main-advantages-button {
+  padding: 1rem 10rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
 }

@@ -1,10 +1,10 @@
 @import url("/css/reset.css");
 @import url("/css/header.css");
-@import url("/css/main-part1.css");
-@import url("/css/main-part2.css");
-@import url("/css/main-part3.css");
+@import url("/css/advantages.css");
+@import url("/css/clients.css");
+@import url("/css/FAQ.css");
 @import url("/css/carousel.css");
-@import url("/css/main-part5.css");
+@import url("/css/products.css");
 @import url("/css/footer.css");
 
 * {
@@ -23,8 +23,7 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +43,6 @@ body {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   color: var(--primary-color);
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -54,18 +52,24 @@ a {
 
 .general-alignment {
   margin-inline: 7rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 button:not(#back, #go) {
   background-color: var(--paragraph);
+  color: var(--primary-color);
   opacity: 0.8;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
   border-radius: 20px;
   padding: 0.9rem 2.5rem;
   font-size: 1.3rem;
-
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 
   border: none;
   cursor: pointer;
@@ -100,14 +104,15 @@ h4 {
 .titulo2 {
   font-weight: 600;
   font-size: 5rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
+  padding-top: 4rem;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   text-align: center;
 }
 
-.titulo3  {
+.titulo3 {
   font-weight: 400;
   font-size: 2rem;
   margin-top: 2rem;
@@ -123,8 +128,8 @@ h4 {
 }
 
 .general-aligment-section {
-  position: absolute;
   display: flex;
+  position: absolute;
 
   justify-content: space-between;
 }
@@ -141,7 +146,7 @@ p {
 }
 
 .animtionY {
-  animation: movingY .8s ease-in-out 0ms infinite alternate-reverse;
+  animation: movingY 0.8s ease-in-out 0ms infinite alternate-reverse;
 }
 
 @keyframes movingY {
@@ -172,10 +177,62 @@ p {
   overflow: hidden;
 }
 
-
 .purple {
   background: linear-gradient(180deg, #5017a0 0%, #7116f2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* ---------responsividade --------- */
+
+@media (max-width: 1190px) {
+  .general-alignment {
+    margin-inline: 3.2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 2.2rem;
+  }
+
+  .titulo2 {
+    font-weight: 600;
+    font-size: 5rem;
+  }
+
+  .titulo3 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 2rem;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .general-alignment {
+    margin-inline: 5rem;
+  }
+
+  .general-aligment-section {
+    display: block;
+
+    position: absolute;
+
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .page {
+    width: 100vw;
+    height: 100%;
+  }
 }

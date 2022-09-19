@@ -1,6 +1,6 @@
 .page4 {
   background-color: var(--paragraph);
-  margin-top: -5rem;
+  margin-top: -6rem;
   position: relative;
 }
 
@@ -104,4 +104,14 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1000px) {
+  #creators {
+    height: 100vh;
+  }
+  
+  #carousel-container {
+    width: 60%;
+  }
 }
