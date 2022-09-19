@@ -54,4 +54,6 @@ https://user-images.githubusercontent.com/90523641/191047767-5391a374-aefa-4d99-
 5. Biblioteca "Particles" implementada na área de carousel
 6. Carousel com Javascript puro (vanilla) e efeito de Hover com as informações dos criadores
 
-<!-- developer @BrunaFusiger-->
+### INTEGRANTES:
+- desenvolvedora front-end e UX/Ui designer: Bruna Fusiger;
+- designer, pesquisador, e organizador: Matheus Silva Rodrigues;
