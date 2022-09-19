@@ -22,11 +22,17 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Bibliotecas Externas para alguns efeitos
 
 
-### O SITE
+### O SITE:
 
 https://user-images.githubusercontent.com/90523641/191045320-5317a99b-f3b3-476a-9dad-49874b269c27.mp4
 
+#### Versão responsiva
 
+https://user-images.githubusercontent.com/90523641/191047767-5391a374-aefa-4d99-870c-8d77ae98a90f.mp4
+
+
+
+### Mockup:
 <p float="left">
 	
 <img src="https://user-images.githubusercontent.com/110424953/190934820-ae9340d2-b074-49e1-8236-f95fa9f5db31.png" width="50%%" height="50%" >
