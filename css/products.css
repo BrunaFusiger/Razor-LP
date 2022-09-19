@@ -3,6 +3,7 @@
   flex-direction: column;
 }
 
+
 .page5 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -14,8 +15,7 @@
 }
 
 .products-card img {
-  width: 20%;
-  height: 40%;
+  width: 40%;
   object-fit: cover;
   margin-block: 4rem;
 }

@@ -2,7 +2,7 @@
 
 .page1 .informations {
   background-color: var(--paragraph);
-  height: 10rem;
+  height: 8rem;
 }
 
 .page1 .informations ul {
@@ -17,13 +17,15 @@
 }
 
 /* --- vantagens --- */
+.page1 .main-advantages {
+  text-align: center;
+}
+
+
 .page1 .main-advantages .titulo3 {
   color: var(--paragraph);
 }
 
-.page1 .main-advantages {
-  text-align: center;
-}
 
 .cards {
   margin-block: 2.5rem;
@@ -105,7 +107,8 @@ p {
 }
 
 .page1 .informations ul li {
-  gap: 1rem;
+  gap: .5rem;
+  margin-right: 1rem;
 }
 
 .card {
@@ -122,4 +125,12 @@ p {
   margin-bottom: 2rem;
 }
 
+}
+
+@media (max-width: 880px) {
+  .page1 .informations {
+    background-color: var(--paragraph);
+    height: 10rem;
+    margin-right: 2rem;
+  }
 }

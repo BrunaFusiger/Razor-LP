@@ -18,6 +18,8 @@
         <div class="general-alignment">
             <section class="general-nav general-aligment-section">
                 <img src="./images/razor-white.png" alt="Logo Razor Computadores Branco">
+                <span id="menu-mobile"><img class="pointer menu-mobile-img" src="/images/three-horizontal-lines-icon.svg" alt="click to open menu"></span>
+                <span id="menu-mobile-close"><img class="pointer menu-mobile-img-close" src="/images/x-svgrepo-com.svg" alt="click to close menu"></span>
                 <nav class="nav-bar">
                     <ul>
                         <li><a href="#advantages">Vantagens</a></li>
@@ -49,61 +51,19 @@
             <section class="informations">
                 <ul class="flex">
                     <li>
-                        <svg width="51" height="53" viewBox="0 0 51 53" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="51" height="53" fill="url(#pattern0)" />
-                            <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_16_45"
-                                        transform="translate(0 0.0188679) scale(0.0111111 0.0106918)" />
-                                </pattern>
-                                <image id="image0_16_45" width="90" height="90"
-                                    xlink:href="data:image/png;base64,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" />
-                            </defs>
-                        </svg>
+                        <img src="/images/1people.png" alt="Consultoria gratuita">
                         <p>Consultoria Gratuita</p>
                     </li>
                     <li>
-                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="52" height="52" fill="url(#pattern0)" />
-                            <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1_2" transform="scale(0.0111111)" />
-                                </pattern>
-                                <image id="image0_1_2" width="90" height="90"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFIklEQVR4nO2cXYiUZRTHf2eJTTekoMxErXYN+lCXMtMbEaK8sC6yiEKhiCKMoqIuCle7KbQPgqi0zAsLI00LuilCiTCKxKCMpG4SMkrU3S03crfC9N/Fu8r07rxf837M7Hh+N7vznHOe5z9nnznzvDPnXXAcx3Ecx3Ecx3Ecx3EcxzmjsXqDkiYAK4DlwCzgnCpFNYGTwBDwI7Ab+AD43MxU1AJjEi1pOvAR0FvUIuOUb4E+M/u4iMn+l+jRnbwHT3Itm4AHzeyfPJN0hB6vwJMc5l5gp6SuPJOEE708z2RtzCJgi6S672lpCCf6qnx62ppbgIcaDQ7X6MLeZduUEWCWmR3IGhje0U48XcD6RgI90dm5SdKtWYO8dDTGIeBKM/sjbYDv6MaYCjydJcB3dOOcBBaa2e40zp7ofHwHzDOz40mOXjry0Qs8ksbRd3R+RoDZZvZTnJPv6PykOlt7oothiaTb4xy8dBTHYYKz9VCip1KQdXVJu2rCN6bwP0/SfEmrJP0SIePXBnR8EZqjJ2P8synSE1lCWq50mNmQmX1lZmuAK4CtzdaUgQckLahnaLlE12Jmw8BdwGfN1pKSDmCjpLPChjEDWZF0GXBNjMvkhPhHCS5pAfqBbWZ28JTdzE5IWgl8mTDPHIJXQBQXJMRPBRbGuMTNXUsv8DjwQtximWu0pIfTxI0ypkZL2hvyGVKofkoySf01PmNqtKS1GXSozho3Z4yPY1hSd+38rVg6zgWW1Q6Mfu3/c3PkNMSYs3UrJhqCD2zCTKhcRT6W1D7IXaMJ6urXEbaLgGkZ5/sNeKd2QNLZQHd999NsAj6NsM0GXkqI3wMsjrHvIMfGzJ1oM9sGbKtnk/Qk8FzCFK8AF47+3g98aGYDIZ/bSOiWMrP9wP4IHX8naMDMBoFPouxSvou5InZ0LszszTi7pPOBNRXJKY2mJzoOSXOBt0guG0nHu8SjmZKPdw33dEAx5+ilRPc7XJoifgEwCThkZt+HzPcAc1JKWQasTOlbj7nA9hzxsRSxo2cAN+aI3wBcDRyR1G1mf9XY1gL3ERyXxjWtdLybAtxfO2Bmh4HXmiOnWFqtRj8h6Y1Q5+bzBM2XkxJitwJ7Y+zPAJfH2L8B7oixLweWJmiIpNUSPY2ge/P1UwNmNijpZWB1XKCZ7QP2RdkVfKYSmWgzOwS8FxM/N279JFqpdJxipaTO0NiLwO/NEFMUrZjoGcDdtQOjHUFJV3YtjX+VVSJmdjq/rbij2xJPdEV4oivCE10RnuiK8ERXhCe6IjzRFeGJrghPdEV4oiuiQ1KXpPWSkttNkzkG9AE9QOfoz1XAcAFzV0Gh+iUdlbRO0kQkbSioDepPSddGLDhP0rGC1imLMvVvQNJIITKDRsS4v+7qgtYpizL1D5ukEWBi6tdDND1xN8xImklEg0uLUKb+kQ5gc4PBYQ4m2DN36VdMmfo3dwCPAesI/nlTHpJ67KbnnL9sytB/FHiVoF86G5J2RtShvoS4pyLidjTwBBpm3OhX9JvCMUnXRcTMV9CcnfkJnrH6JXVL+jdG7GpJPZI6Jc1UsBOiRB6XdHEpQttBv6QtEQtn5e3SRLaDfkmTJR3JKXJA0pRShbaDfknXq/GLnWFJi0oX2S76JS2WNJhR5ICkGyoTGcO40i9puqT3JZ1IEHhC0nZJWe9pKZWq9OfqYg8JngXcSXDDzSUEN1AOAgcI7g1518x+KGq9ohnv+h3HcRzHcRzHcRzHcarkP/aUIeWzKeLwAAAAAElFTkSuQmCC" />
-                            </defs>
-                        </svg>
+                        <img src="/images/2frete.png" alt="frete grátis">
                         <p>Frete Grátis</p>
                     </li>
                     <li>
-                        <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="52" height="51" fill="url(#pattern0)" />
-                            <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_16_47"
-                                        transform="translate(0.00961538) scale(0.0108974 0.0111111)" />
-                                </pattern>
-                                <image id="image0_16_47" width="90" height="90"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFuElEQVR4nO2cXahmVRnHf0/GfDAD04gaSSXZyaIkFQnMTANtSIMUTCJQsKTugrwpaGBmSjK9qgtv1G4qikIbJlP7sAHTQKEso/yYwPCjxizNkzPjcHJmfl7sc+Co533fvdda+/3Y7/7B4Vysd/3Xs/7vep+99lprb+jp6enp6enpGQcx6QAA1DOBK4CLgHcAJwDPA88A9wC3RcSfJxfhjKOepu6xHrvV90w65plD/YS6WNPkFV5SPzXp2GcG9ZPqkYYmr3BEvXjSfZh6rNLF/xJNXmFRffek+zLVqD/LNHmFn066L1OLelYhk1WPqWdMuk91edOY2/t0Qa0ALi+o1yrjNvqiwnofL6zXGuM2+pTCeu8srNcaY70zVJeAdQUllyJiQ0G91hj3iH5+yvVaY9xGPz3leq0xbqPvKaz368J6rTFuo28HLKQl0N+0DEK9rdANy08m3ZepRj1VfTHT5BfVd026L1OPeoG6lGjyEfWSSfehpzDqB9Rd6p8mHctUoIZ6vfo59W2ZWu9Xd6p/XfVL+m+pWIuirlevUr84pvauXWXKMfVh9Qb1vJr11zJ3NY+13YdGqJvUHepzywEeVS9ruc2L1VeG5PVH1C+pW15Xb5S5q7m7zT7Uxuqne426f40gD9YdWQntnqceqGHUShy3WuXcOuauZmcb8Tft7EnqnSMCPaQWXSZVP2q1YTsOPpYTa/bqnfoRYDdwUq7WFLMEbI2Iw6kCb85pXb0Q2ANsztGZAfbkmAwZRqvbgJ9Tdn15Wrk5VyApdajvBR4E3pIbwAzwKHB6RGQthjVevVM3UKWLeTAZYHuuyZC2TPo14H25Dc8I90bEnhJCjYy2OmT4lRINzwiLapF91aYj+qvA+hINzwiXAdtLCNX+ttS3Ak8CM7HrXJBjwLaI2Jsj0mREX838mQyVR7eom3JF6jLP55JPBb6eI1ArdagnAs8Cx+U0NuMsAQsR8Y+UygNHtLpOvVHdDzxFt0x+GdgBLFBd3BeAncCw2+z1VJOBslgtmneRQ+o5A/r8YfXlIXUPq0k3asNy9FUpgjPADRHx4FoFEfEAcOOQuhuonh5rzLgP0EwDPxpR/sMR5VemNDrM6B+kCM4Az2SWn68+rl6nfrBuowNnHeo64BtUKeTkuoIzwEJEPDGo0GqZ4W8N9PZR/Qq+ExEHsiJz+MbnrLFjRF93Jeo+rQ4ckHXn0S8Axzf8fqaVw8CFyxe+16CeC/wG2Jio/eOI+OxaBXUvhouJDU8jG4G9VscMFqzuFxbUXcBe0k0G2DaooO6I/gNwdkYA88K/ImLNU1J1R/S+gsF0mYcHFdQ1uj/gV4/fDirojS7LvYMK6ubozcB/mM/16LocBI6PiFfWKqw1oiPiIPCrklF1kN8NMhmarXXsLhBMlxmYn6GZ0XcAebeY3WZgfoYGRkfEInBrdjjd5CDw0LAPNF0m/Tbw/+RwussvhuVnaGj08n7ZHVkhdY8DwHWjPpSy8P/HhDpdZBH4JXBBRPxl1IdTju0+mlCnK1wdEd9LqZgyoh9JaagD3A98P7Vy4wN86nFUeSlnOXHWOAB8KCKSF9caj+iIOMp8reYJfD7HZEjfBZ+n9LE9Im7PFUk1el4uiLsi4lslhFIfFur6iD4KfDkibiol2Bv9Rv4NXBkRRV9LlPpUVldnHv8Ezo6I50oLJ+XoDs88tlBtcBQn5+xdF9PHZuC0NoRzjO7qzKOVYxX9iH4jnTP6IeBS4Cbg8UytkrRidPLDigVmHt+NiC+s0tsCnAWcSfVwzinA24GtVI9DrwM2Lbd5mGpX4yXgEPD35b8nlv9fDlybGNdiRGxNrNsO6l0Zpzo/02JcG9V9iXG1MuvIQj3XtPfX/V5t9Qlcq1cApRw3HrlbMhGsXrdzn9VDOKPYr96snjCm2C61enHV0RqxvaB+0yol9vT09PT09PT09PT0zA+vAhGV2TnUWZiIAAAAAElFTkSuQmCC" />
-                            </defs>
-                        </svg>
+                        <img src="/images/3desconto.png" alt="10% de desconto à vista">
                         <p>10% de desconto à vista</p>
                     </li>
                     <li>
-                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="51" height="51" fill="url(#pattern0)" />
-                            <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_16_48" transform="scale(0.0111111)" />
-                                </pattern>
-                                <image id="image0_16_48" width="90" height="90"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAD70lEQVR4nO2dz6tVVRTHP9vqGToyKUscaSTRpKhQEZo0kWggkvZDK2hSAyGCBjUSmqjgX2CT0hciJo0cSrNCnpVBCGXkwHrKqywxgqL8NrgJPbp7n33PXsd97nnrMzxr77W/98u+a5+zzzn3guM4juM4zpJE0oykg5LmtZgLknbW1jcYJB1QnBuS3qytcRCMmcnj2F1b59STYbIkXZN0f22tU02m0ZJ0urbWqWYCoyXpqdp6p5YJjf5KUqitOYdltQUU8hCwrbaIHKbdaIA3agvIoXdfO0matAuwMYRwoQs9VgxhRgfg2doimhiC0QC9vzQfQum4yfoQwkVTMYYMZUYDbK0tIMWQjN5SW0CKIRn9cG0BKXpltKQ7C7rfayakA3plNPB6Qd81Zio6oDdnHZJWAd8Cd7VM8XsIYaWhJFP6NKP30d5kgJ+shHRBL4yWtB54rTDNdxZauqIXRgMHgOWFOb6xENIV1Y2WtAl4xiDVlwY5OqO60cAhbBblzwxyDBNJOya8oxLjL0kran+eXiLpDklfGxnd67IBdUvHq8ADRrl6XzaitVHSDPAO8CKw1mi8q8B7wH7gPHC3Ud5byd/AAnAWOAYcDyHcaOqUMno/8JaZvMV8D6zrKPet5nNgZwgheR6fMnoeuM9a1UBZADanbjykavQqez2D5R7ghKSonymjf7XXM2geBXbFgimjf7bXMniejwVSRl+NHH8yTECZ7qnjsVigjdElW5lDZ3Us0KZ0RJM5XIkFfEbb8kUs4EbbMhsLuNF2fAp8FAu60TZcAvak9jzcaBteatrr8LMOG45K2pBq4DPahnXArKTbYg3caDs2A9tjwajRIYTfgD/GhJZL6u0TQZXZEws03cr6JXLcZ/V4HokFmoz2BXEyojdKmoz2Oj0ZMb/caGPmYgE32pYPYoG2NdqN/j9ngROxYNsZ7YvhYq4Au9rudYCXjhzmgK1N7zi60WW8DWxp2lACN7qUHYxe+m/EF8MyHifzIXpfDMuJPsvxX7x0lLMpp1HSaN/ByyLr253zILrv4KXJenQux2jfwUtzJqdRjtFep9Mcy2nkRpcxB3yY09CNbs9l4Lmc91egrEYvZaPPMNrfyH7//PaMNj6jR1xmVCpmgZO5M/kmbnQ++0II77btXFKjl9rp3cslnX0xzOfBks45pSO2GD4htf4xwGkkx6soJTN6qXG+pLMbnU/0DncOjUb/u4O3UDLIGOYjr8plXWVV4BxwuCRB7s9IvF8yyBiORI6/ApwyHquUc8DTIYQ/Ox9J8X/7mZQfNPpDm5nEWMskvSDpY0k/Fo7XluuSPpG0N6XVcRzHcRzHcRxnEPwDuSFJDiW4L4cAAAAASUVORK5CYII=" />
-                            </defs>
-                        </svg>
+                        <img src="/images/4garantis.png" alt=">Garantia Estendida">
                         <p>Garantia Estendida</p>
                     </li>
                 </ul>
@@ -267,7 +227,7 @@
             <section class="cards flex general-alignment" data-aos="zoom-in-up" data-aos-duration="2500"
                 data-aos-anchor="#example-anchor" data-aos-offset="400">
                 <div class="products-card">
-                    <img src="/images/comp3.png" alt="computador VIRTUOS RX 2880G58">
+                    <img src="/images/comp2.png" alt="computador VIRTUOS RX 2880G58">
                     <h4>VIRTUOS RX 2880G58</h4>
                     <ul class="default">
                         <li>Threadripper PRO 5995WX AMD® Ryzen™ RTX A5000</li>
@@ -340,6 +300,7 @@
     <script src="/script/typeWrite.js"></script>
     <script src="/script/Carousel.js"></script>
     <script src="/script/smooth.js"></script>
+    <script src="/script/nav-mobile.js"></script>
 </body>
 
 </html>

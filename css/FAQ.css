@@ -89,8 +89,23 @@ details[open] summary::after {
 }
 
 @media (max-width: 1000px) {
-  /* corrigir bug no faq */
-  /* .page3 {
-    margin-bottom: 3rem;
-  } */
+  .page3 .titulo2 {
+    width: 80%;
+    font-size: 3.5rem;
+  }
+  
+  .page3 .video {
+    background-color: #d9d9d9;
+    width: 60%;
+    height: 30vh;
+    margin-bottom: -5rem;
+  }
+  
+  .question-model summary {
+    width: 50%;
+  }
+  
+  .question-model p {
+    width: 50%;
+  }
 }

@@ -185,6 +185,28 @@ p {
 }
 
 /* ---------responsividade --------- */
+@media (max-width: 1000px) {
+
+  .general-alignment {
+    margin-inline: 5rem;
+  }
+
+  .general-aligment-section {
+    display: block;
+
+    position: absolute;
+
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .page {
+    width: 100vw;
+    height: 100%;
+  }
+}
 
 @media (max-width: 1190px) {
   .general-alignment {
@@ -214,25 +236,3 @@ p {
   }
 }
 
-@media (max-width: 1000px) {
-
-  .general-alignment {
-    margin-inline: 5rem;
-  }
-
-  .general-aligment-section {
-    display: block;
-
-    position: absolute;
-
-  }
-
-  .flex {
-    display: block;
-  }
-
-  .page {
-    width: 100vw;
-    height: 100%;
-  }
-}

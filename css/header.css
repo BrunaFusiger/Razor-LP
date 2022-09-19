@@ -1,93 +1,120 @@
 header.background-img {
-    background-image: url(/images/background.svg);
-  
-    background-size: cover;
-    background-position-y: bottom;
-    background-position-x: center;
-    background-repeat: no-repeat;
+  background-image: url(/images/background.svg);
+
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
-  /* ---cabeçalho--- */
-  .general-nav {
-    align-items: center;
-  
-    height: 20%;
-    width: 90%;
-  }
-  
-  .general-nav img {
-    height: 160%;
-  }
-  
-  .nav-bar ul {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-  }
-  
-  /* ---- HOVER ---- */
-  .nav-bar ul li a {
-    transition: 0.5s;
-    position: relative;
-  }
-  
-  .nav-bar ul li a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1.7px;
-    border-radius: 3px;
-  
-    background-color: var(--paragraph);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-  
-    bottom: 0;
-    left: 0;
-  
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .nav-bar ul li a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-  
-  /* --- conteúdo parte 1 -> em baixo cabeçalho --- */
-  
-  .nav-content {
-    align-items: flex-start;
-    width: 90%;
-    height: 50%;
-  
-    margin-top: 28rem;
-  }
-  
-  .nav-content img {
-    transform: translate(-8rem, -13rem);
-    max-width: 100%;
-    position: relative;
-  }
-  
-  .nav-content-title {
-    display: block;
-    text-align: end;
-  }
-  
-  .nav-content .nav-content-title h1 {
-    margin-block: 3rem;
-    font-size: 5rem;
-  }
-  
-  .nav-content .nav-content-title button#nav-content-button {
-    padding: 2rem 4rem;
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-  
+/* ----- nav responsivo */
+#menu-mobile {
+  display: none;
+}
 
-@media(max-width: 1190px){
+#menu-mobile img {
+  width: 30px;
+}
+
+.menu-mobile-img-close {
+  width: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  opacity: 0;
+  z-index: 3000;
+  transition: .5s;
+}
+
+.menu-mobile-img-close.show {
+  opacity: 100;
+}
+
+.menu-mobile-img-close:hover {
+  transform: scale(1.1);
+}
+
+/* ---cabeçalho--- */
+.general-nav {
+  align-items: center;
+
+  height: 20%;
+  width: 90%;
+}
+
+.general-nav img {
+  height: 160%;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* ---- HOVER ---- */
+.nav-bar ul li a {
+  transition: 0.5s;
+  position: relative;
+}
+
+.nav-bar ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.7px;
+  border-radius: 3px;
+
+  background-color: var(--paragraph);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+
+  bottom: 0;
+  left: 0;
+
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-bar ul li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* --- conteúdo parte 1 -> em baixo cabeçalho --- */
+
+.nav-content {
+  align-items: flex-start;
+  width: 90%;
+  height: 50%;
+
+  margin-top: 28rem;
+}
+
+.nav-content img {
+  transform: translate(-8rem, -13rem);
+  max-width: 90%;
+  position: relative;
+}
+
+.nav-content-title {
+  display: block;
+  text-align: end;
+}
+
+.nav-content .nav-content-title h1 {
+  margin-block: 3rem;
+  font-size: 5rem;
+}
+
+.nav-content .nav-content-title button#nav-content-button {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1190px) {
   /* ---cabeçalho--- */
   .general-nav {
     height: 20%;
@@ -97,17 +124,16 @@ header.background-img {
   .nav-content {
     margin-top: 33rem;
   }
-   
+
   .nav-content .nav-content-title h1 {
     margin-block: 3rem;
     font-size: 4rem;
   }
-  
+
   .nav-content .nav-content-title button#nav-content-button {
     padding: 2rem 5rem;
     font-size: 1.8rem;
   }
-  
 }
 
 @media (max-width: 1090px) {
@@ -115,18 +141,18 @@ header.background-img {
     gap: 3rem;
     max-width: 90%;
   }
- 
+
   .nav-content {
     width: 90%;
     height: 50%;
-  
+
     margin-top: 28rem;
   }
-  
+
   .nav-content img {
     transform: translate(-8rem, -4rem);
   }
-  
+
   .nav-content .nav-content-title h1 {
     margin-block: 3rem;
     font-size: 4.5rem;
@@ -134,32 +160,71 @@ header.background-img {
 }
 
 @media (max-width: 1000px) {
+  #menu-mobile {
+    width: 40px;
+    height: 20px;
+    display: inline;
+    position: absolute;
+    right: 0;
+  }
+
+  #menu-mobile img {
+    transition: 0.5s;
+    z-index: 1000;
+  }
+
+  #menu-mobile img:hover {
+    transform: scale(1.1);
+  }
 
   #header {
     height: 100vh;
     width: 100vw;
   }
-  .header{
-    display: block;
-    background-color: red;
+
+  .nav-bar {
+    background-color: var(--color1);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: -35px;
+    display: none;
+    opacity: 0;
   }
+
+  .nav-bar.show {
+    opacity: 100;
+  }
+
+  .nav-bar ul {
+    display: block;
+    margin: 20rem auto;
+  }
+
+  .nav-bar ul li {
+    margin-bottom: 4rem;
+  }
+
+  .nav-bar ul li a {
+    font-size: 3rem;
+  }
+
+  /* --- */
 
   .general-nav {
     align-items: center;
-  
+
     height: 20%;
     width: 90%;
   }
-  
+
   .general-nav img {
     height: 150%;
     margin: -5rem auto;
   }
-  
-  .nav-bar ul {
-    display: none;
-  }
-  
+
   .nav-content {
     align-items: center;
     text-align: center;
@@ -167,23 +232,23 @@ header.background-img {
     margin-top: 25rem;
     display: block;
   }
-  
+
   .nav-content img {
     transform: translate(-3rem, -12rem);
     max-width: 55%;
   }
-  
+
   .nav-content-title {
     width: 95%;
     text-align: center;
     margin-top: -12rem;
     color: var(--paragraph);
   }
-  
+
   .nav-content .nav-content-title h1 {
     margin-block: 3rem;
     font-size: 3.5rem;
-    
+
     text-align: center;
     color: var(--paragraph);
   }
@@ -193,10 +258,15 @@ header.background-img {
     text-align: center;
     color: var(--paragraph);
   }
-  
+
   .nav-content .nav-content-title button#nav-content-button {
     padding: 1.5rem 3rem;
     font-size: 1.5rem;
   }
-  
+}
+
+@media (max-width: 880px) {
+  .nav-content {
+    margin-top: 30rem;
+  }
 }
