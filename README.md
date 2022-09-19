@@ -13,10 +13,10 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- FIGMA
+- JAVASCRIPT
 - HTML5
 - CSS3
-- JAVASCRIPT
+- FIGMA
 - GITHUB
 - VSCode
 - Bibliotecas Externas para alguns efeitos
